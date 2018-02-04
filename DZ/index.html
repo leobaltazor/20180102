@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<h1>Круги</h1>
+	<div class="wrapper">
+			<input type="radio" id="link" name="rad" checked>
+			<label for="link" class="circle"></label>
+			<input type="radio" id="link1" name="rad">
+			<label for="link1" class="circle"></label>
+	</div>
+<hr>
+<div class="center">
+<h1>Кнопка</h1>
+<a href="#" class="button">Кнопка</a>
+<input type="submit" name="" value="Кнопка">
+</div>
+<hr>
+
+<div class="frame center">
+	<h1>iFrame</h1>
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<div id=fr data='<iframe width="560" height="315" src="https://www.youtube.com/embed/2JMMnNOhDoc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen name="video"></iframe>'>Смотреть ролик ?<br></div><button type="button" onclick="PlayTo(this)">Go</button>
+<script>
+function PlayTo(sel){
+  var div = sel.previousSibling;
+  div.innerHTML=div.getAttribute('data');
+  sel.style.display = "none";
+}
+</script>
+</div>
+</body>
+</html>
